@@ -34,7 +34,7 @@ let list = [
     },
     {
         product: "Strawberry",
-        price: 45
+        price: 35
     },
     {
         product: "Banana",
@@ -67,7 +67,7 @@ function findMaxData(listData){
     let output = [];
     output.push(arr[arr.length - 1]);
     for (let i = arr.length - 2; i >= 0; i--){
-        if (arr[arr.length - 1] == arr[i] && i != 0){
+        if (output[output.length - 1].price == arr[i].price && i != 0){
             output.push(arr[i]);
         }        
         else {
